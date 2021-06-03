@@ -1,10 +1,16 @@
 ﻿namespace MyRules.Business
 {
-    using System;
     using System.Collections.Generic;
-    using System.Text;
+    using OrderRules;
 
     public class OrderReceivedHandler
     {
+        private readonly IEnumerable<IOrderRule> _orderRules;
+
+        public OrderReceivedHandler(IEnumerable<IOrderRule> orderRules)
+        {
+            _orderRules = orderRules;
+        }
+
     }
 }
