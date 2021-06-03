@@ -6,5 +6,7 @@
     public interface IMembershipHandler
     {
         Task Activate(IOrder order);
+
+        Task Upgrade(IOrder order);
     }
 }
