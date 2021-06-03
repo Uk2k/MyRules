@@ -33,12 +33,20 @@
             this.order = new Order("", 1, membership);
 
             await this.ruleUnderTest.CheckRule(order);
+
+            await this.membershipHandler.Received().Activate(order);
         }
 
         [Test]
         public async Task ShouldNotCreatePackingSlip()
         {
+            var nonMembership = new EBook("new member");
 
+            this.order = new Order("", 1, nonMembership);
+
+            await this.ruleUnderTest.CheckRule(order);
+
+            await this.membershipHandler.DidNotReceive().Activate(order);
         }
     }
 }

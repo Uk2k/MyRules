@@ -1,6 +1,7 @@
 ﻿namespace MyRules.Business.OrderRules
 {
     using System;
+    using System.Linq;
     using System.Threading.Tasks;
     using Contracts;
     using Memberships;
@@ -16,7 +17,10 @@
 
         public async Task CheckRule(IOrder order)
         {
-            throw new NotImplementedException();
+            if(order.Product.ProductTypes.Contains(Product.ProductType.Membership))
+            {
+                await this._membershipHandler.Activate(order);
+            }
         }
     }
 }
