@@ -5,6 +5,6 @@
 
     public interface IOrderRule
     {
-        Task CheckRule(Order order);
+        Task CheckRule(IOrder order);
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace MyRules.Contracts
 {
-    public class Order
+    public class Order : IOrder
     {
         public string Customer { get; }
 

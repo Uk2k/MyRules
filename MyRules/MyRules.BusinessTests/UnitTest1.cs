@@ -24,7 +24,7 @@ namespace MyRules.BusinessTests
         {
             var mockRule1 = Substitute.For<IOrderRule>();
             var mockRule2 = Substitute.For<IOrderRule>();
-            var order = Substitute.For<Order>();
+            var order = Substitute.For<IOrder>();
             this._orderRuleList.Add(mockRule1);
             this._orderRuleList.Add(mockRule2);
             this.handlerUnderTest = new OrderReceivedHandler(this._orderRuleList);

@@ -14,7 +14,7 @@
             _orderRules = orderRules;
         }
 
-        public async Task RunRulesEngine(Order order)
+        public async Task RunRulesEngine(IOrder order)
         {
             
         }
