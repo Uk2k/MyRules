@@ -6,5 +6,7 @@
     public interface IPackingSlipHandler
     {
         Task CreatePackingSlip(Product product);
+
+        Task CreatePackingSlipWithReason(Product product, string reason);
     }
 }

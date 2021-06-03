@@ -4,5 +4,6 @@
     &lt;TestId&gt;NUnit3x::2D84EB9D-DCCD-4D38-93C4-286FADC95D10::.NETCoreApp,Version=v3.1::MyRules.BusinessTests.OrderReceivedHandlerTests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2D84EB9D-DCCD-4D38-93C4-286FADC95D10::.NETCoreApp,Version=v3.1::MyRules.BusinessTests.OrderRules.PhysicalProductOrderRuleTests.ShouldCreatePackingSlip&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;NUnit3x::2D84EB9D-DCCD-4D38-93C4-286FADC95D10::.NETCoreApp,Version=v3.1::MyRules.BusinessTests.OrderRules.PhysicalProductOrderRuleTests.ShouldNotCreatePackingSlip&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::2D84EB9D-DCCD-4D38-93C4-286FADC95D10::.NETCoreApp,Version=v3.1::MyRules.BusinessTests.OrderRules.BookRoyaltyOrderRuleTests.ShouldCreatePackingSlip&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
