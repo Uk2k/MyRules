@@ -4,6 +4,7 @@
     using System.Linq;
     using System.Threading.Tasks;
     using Contracts;
+    using Extensions;
     using Memberships;
 
     public class MembershipOrderRule : IOrderRule
@@ -17,7 +18,7 @@
 
         public async Task CheckRule(IOrder order)
         {
-            if(order.Product.ProductTypes.Contains(Product.ProductType.Membership))
+            if(order.Product.ContainsMembership())
             {
                 await this._membershipHandler.Activate(order);
             }

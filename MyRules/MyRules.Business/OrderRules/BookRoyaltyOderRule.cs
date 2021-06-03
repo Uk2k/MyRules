@@ -3,6 +3,7 @@
     using System.Linq;
     using System.Threading.Tasks;
     using Contracts;
+    using Extensions;
     using PackingSlips;
 
     public class BookRoyaltyOderRule : IOrderRule
@@ -16,7 +17,7 @@
 
         public async Task CheckRule(IOrder order)
         {
-            if (order.Product.ProductTypes.Contains(Product.ProductType.Book))
+            if (order.Product.ContainsBook())
             {
                 await _packingSlipHandler.CreatePackingSlipWithReason(order.Product, "For royalty payments");
             }

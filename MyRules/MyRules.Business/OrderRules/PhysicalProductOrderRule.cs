@@ -4,6 +4,7 @@
     using System.Linq;
     using System.Threading.Tasks;
     using Contracts;
+    using Extensions;
     using PackingSlips;
 
     public class PhysicalProductOrderRule : IOrderRule
@@ -17,7 +18,7 @@
 
         public async Task CheckRule(IOrder order)
         {
-            if (!order.Product.ProductTypes.Contains(Product.ProductType.Physical))
+            if (!order.Product.IsPhysical())
             {
                 return;
             }
