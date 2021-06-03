@@ -15,9 +15,14 @@
             return product.ProductTypes.Contains(Product.ProductType.Book);
         }
 
-        public static bool ContainsMembership(this Product product)
+        public static bool ContainsNewMembership(this Product product)
         {
-            return product.ProductTypes.Contains(Product.ProductType.Membership);
+            return product.ProductTypes.Contains(Product.ProductType.NewMembership);
+        }
+
+        public static bool ContainsUpgradeMembership(this Product product)
+        {
+            return product.ProductTypes.Contains(Product.ProductType.UpgradeMembership);
         }
     }
 }

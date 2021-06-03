@@ -8,8 +8,8 @@
         {
             Physical,
             Book,
-            Membership,
-            Upgrade,
+            NewMembership,
+            UpgradeMembership,
         }
 
         public string Description { get; }

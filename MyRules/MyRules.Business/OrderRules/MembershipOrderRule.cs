@@ -18,7 +18,7 @@
 
         public async Task CheckRule(IOrder order)
         {
-            if(order.Product.ContainsMembership())
+            if(order.Product.ContainsNewMembership())
             {
                 await this._membershipHandler.Activate(order);
             }

@@ -26,9 +26,9 @@
         }
 
         [Test]
-        public async Task ShouldCreatePackingSlip()
+        public async Task ShouldActivateMembership()
         {
-            var membership = new Membership("new member");
+            var membership = new NewMembership("new member");
 
             this.order = new Order("", 1, membership);
 
@@ -38,7 +38,7 @@
         }
 
         [Test]
-        public async Task ShouldNotCreatePackingSlip()
+        public async Task ShouldNotActivateMembership()
         {
             var nonMembership = new EBook("new member");
 

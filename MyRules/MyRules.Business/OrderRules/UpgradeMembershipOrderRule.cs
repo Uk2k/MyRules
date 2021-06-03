@@ -3,6 +3,7 @@
     using System;
     using System.Threading.Tasks;
     using Contracts;
+    using Extensions;
     using Memberships;
 
     public class UpgradeMembershipOrderRule : IOrderRule
@@ -16,7 +17,10 @@
 
         public async Task CheckRule(IOrder order)
         {
-            throw new NotImplementedException();
+            if(order.Product.ContainsUpgradeMembership())
+            {
+                await this._membershipHandler.Upgrade(order);
+            }
         }
     }
 }
