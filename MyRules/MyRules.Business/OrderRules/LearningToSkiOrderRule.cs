@@ -3,6 +3,7 @@
     using System;
     using System.Threading.Tasks;
     using Contracts;
+    using Extensions;
     using PackingSlips;
 
     public class LearningToSkiOrderRule : IOrderRule
@@ -16,7 +17,16 @@
 
         public async Task CheckRule(IOrder order)
         {
-            throw new NotImplementedException();
+            if (!order.Product.ContainsBook())
+            {
+                return;
+            }
+
+            if (order.Product.Description.Equals("Learning To Ski"))
+            {
+                await this._packingSlipHandler.CreatePackingSlipWithReason(order.Product,
+                    "the result of a court decision in 1997");
+            }
         }
     }
 }

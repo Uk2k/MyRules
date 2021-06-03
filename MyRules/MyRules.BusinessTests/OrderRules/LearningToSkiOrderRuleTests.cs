@@ -33,7 +33,7 @@
 
             await this.ruleUnderTest.CheckRule(this.order);
 
-            await this.packingSlipHandler.Received().CreatePackingSlipWithReason(book, "the result of a court decision in 1997).");
+            await this.packingSlipHandler.Received().CreatePackingSlipWithReason(book, "the result of a court decision in 1997");
         }
 
         [Test]
@@ -41,11 +41,12 @@
         {
             var book = new PhysicalBook("Learning to sow");
 
-            this.order = new Order("", 1, product);
+            this.order = new Order("", 1, book);
 
             await this.ruleUnderTest.CheckRule(this.order);
 
-            await this.packingSlipHandler.DidNotReceive().CreatePackingSlipWithReason(book, "the result of a court decision in 1997).");
+            await this.packingSlipHandler.DidNotReceive().CreatePackingSlipWithReason(book, "the result of a court decision in 1997");
         }
+
     }
 }
