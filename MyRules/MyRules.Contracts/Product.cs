@@ -7,6 +7,7 @@
         public enum ProductType
         {
             Physical,
+            Book,
             Membership,
             Upgrade,
         }

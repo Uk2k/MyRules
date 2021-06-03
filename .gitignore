@@ -315,3 +315,4 @@ MyRules/MyRules.BusinessTests/obj/Debug/netcoreapp3.1/MyRules.BusinessTests.pdb
 MyRules/MyRules.sln.DotSettings.user
 MyRules/MyRules.BusinessTests/obj/Debug/netcoreapp3.1/MyRules.BusinessTests.csprojAssemblyReference.cache
 *.cache
+*.cache
