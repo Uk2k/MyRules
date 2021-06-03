@@ -17,7 +17,12 @@
 
         public async Task CheckRule(IOrder order)
         {
+            if (!order.Product.ProductTypes.Contains(Product.ProductType.Physical))
+            {
+                return;
+            }
 
+            await this._packingSlipHandler.CreatePackingSlip(order.Product);
         }
     }
 }
