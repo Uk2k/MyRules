@@ -1,9 +1,0 @@
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\bin\Debug\netcoreapp3.1\MyRules.Contracts.deps.json
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\bin\Debug\netcoreapp3.1\MyRules.Contracts.dll
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\bin\Debug\netcoreapp3.1\MyRules.Contracts.pdb
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\obj\Debug\netcoreapp3.1\MyRules.Contracts.csprojAssemblyReference.cache
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\obj\Debug\netcoreapp3.1\MyRules.Contracts.AssemblyInfoInputs.cache
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\obj\Debug\netcoreapp3.1\MyRules.Contracts.AssemblyInfo.cs
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\obj\Debug\netcoreapp3.1\MyRules.Contracts.csproj.CoreCompileInputs.cache
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\obj\Debug\netcoreapp3.1\MyRules.Contracts.dll
-C:\git\repos\MyRules\MyRules\MyRules.Contracts\obj\Debug\netcoreapp3.1\MyRules.Contracts.pdb
