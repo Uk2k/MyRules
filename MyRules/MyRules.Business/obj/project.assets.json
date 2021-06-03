@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "MyRules.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/MyRules.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MyRules.Contracts.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "MyRules.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../MyRules.Contracts/MyRules.Contracts.csproj",
+      "msbuildProject": "../MyRules.Contracts/MyRules.Contracts.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "MyRules.Contracts >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\s.donnachie\\.nuget\\packages\\": {},
@@ -37,7 +56,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\git\\repos\\MyRules\\MyRules\\MyRules.Contracts\\MyRules.Contracts.csproj": {
+              "projectPath": "C:\\git\\repos\\MyRules\\MyRules\\MyRules.Contracts\\MyRules.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

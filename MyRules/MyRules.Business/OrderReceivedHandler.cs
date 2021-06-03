@@ -1,6 +1,8 @@
 ﻿namespace MyRules.Business
 {
     using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Contracts;
     using OrderRules;
 
     public class OrderReceivedHandler
@@ -12,5 +14,9 @@
             _orderRules = orderRules;
         }
 
+        public async Task RunRulesEngine(Order order)
+        {
+            
+        }
     }
 }
