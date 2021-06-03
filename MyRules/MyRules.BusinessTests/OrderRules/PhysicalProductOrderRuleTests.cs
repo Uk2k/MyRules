@@ -28,7 +28,14 @@
         [Test]
         public async Task ShouldCreatePackingSlip()
         {
+            this.product =
+                new Product("Physical", new List<Product.ProductType>() {Product.ProductType.Physical });
 
+            this.order = new Order("", 1, this.product);
+
+            await this.ruleUnderTest.CheckRule(this.order);
+
+            await this.packingSlipHandler.Received().CreatePackingSlip(this.product);
         }
 
         [Test]
