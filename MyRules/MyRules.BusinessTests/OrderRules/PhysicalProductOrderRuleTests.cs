@@ -13,7 +13,7 @@
     public class PhysicalProductOrderRuleTests
     {
         private IPackingSlipHandler packingSlipHandler;
-        private PhysicalProductOrderRule ruleUnderTest;
+        private BookRoyaltyOderRule ruleUnderTest;
         private Product product;
         private Order order;
 
@@ -22,7 +22,7 @@
         {
             this.packingSlipHandler = Substitute.For<IPackingSlipHandler>();
 
-            this.ruleUnderTest = new PhysicalProductOrderRule(this.packingSlipHandler);
+            this.ruleUnderTest = new BookRoyaltyOderRule(this.packingSlipHandler);
         }
 
         [Test]
