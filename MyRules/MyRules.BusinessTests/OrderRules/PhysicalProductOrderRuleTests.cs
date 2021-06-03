@@ -41,7 +41,14 @@
         [Test]
         public async Task ShouldNotCreatePackingSlip()
         {
+            this.product =
+                new Product("NonPhysical", new List<Product.ProductType>());
 
+            this.order = new Order("", 1, this.product);
+
+            await this.ruleUnderTest.CheckRule(this.order);
+
+            await this.packingSlipHandler.DidNotReceive().CreatePackingSlip(this.product);
         }
     }
 }

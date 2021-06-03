@@ -306,3 +306,10 @@ MigrationData*.json
 run-tests.js
 .awcache/
 *.tsbuildinfo
+*.dll
+MyRules/MyRules.BusinessTests/bin/Debug/netcoreapp3.1/MyRules.BusinessTests.dll
+MyRules/MyRules.BusinessTests/bin/Debug/netcoreapp3.1/MyRules.BusinessTests.pdb
+MyRules/MyRules.BusinessTests/obj/Debug/netcoreapp3.1/MyRules.BusinessTests.csprojAssemblyReference.cache
+MyRules/MyRules.BusinessTests/obj/Debug/netcoreapp3.1/MyRules.BusinessTests.dll
+MyRules/MyRules.BusinessTests/obj/Debug/netcoreapp3.1/MyRules.BusinessTests.pdb
+MyRules/MyRules.sln.DotSettings.user
