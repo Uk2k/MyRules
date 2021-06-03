@@ -2,7 +2,7 @@ namespace MyRules.BusinessTests
 {
     using NUnit.Framework;
 
-    public class Tests
+    public class OrderReceivedHandlerTests
     {
         [SetUp]
         public void Setup()
