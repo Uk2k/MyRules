@@ -22,6 +22,7 @@ namespace MyRules.BusinessTests
         [Test]
         public async Task RunsAllSuppliedRules()
         {
+            // Arrange
             var mockRule1 = Substitute.For<IOrderRule>();
             var mockRule2 = Substitute.For<IOrderRule>();
             var order = Substitute.For<IOrder>();
@@ -29,8 +30,10 @@ namespace MyRules.BusinessTests
             this._orderRuleList.Add(mockRule2);
             this.handlerUnderTest = new OrderReceivedHandler(this._orderRuleList);
 
+            // Act
             await this.handlerUnderTest.RunRulesEngine(order);
 
+            // Assert
             await mockRule1.Received().CheckRule(order);
             await mockRule2.Received().CheckRule(order);
         }
