@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRules.Contracts", "MyRule
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRules.BusinessTests", "MyRules.BusinessTests\MyRules.BusinessTests.csproj", "{2D84EB9D-DCCD-4D38-93C4-286FADC95D10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E67FB874-383C-43E5-B4AB-606F01281CAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2D84EB9D-DCCD-4D38-93C4-286FADC95D10} = {E67FB874-383C-43E5-B4AB-606F01281CAE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81BEEDAF-E429-4F28-B1A6-2CBDA54E1D0C}
