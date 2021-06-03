@@ -1,18 +1,38 @@
 namespace MyRules.BusinessTests
 {
+    using System.Collections.Generic;
+    using System.Threading.Tasks;
+    using Business;
+    using Business.OrderRules;
+    using Contracts;
+    using NSubstitute;
     using NUnit.Framework;
 
     public class OrderReceivedHandlerTests
     {
+        private OrderReceivedHandler handlerUnderTest;
+        private List<IOrderRule> _orderRuleList;
+
         [SetUp]
         public void Setup()
         {
+            this._orderRuleList = new List<IOrderRule>();
         }
 
         [Test]
-        public void Test1()
+        public async Task RunsAllSuppliedRules()
         {
-            Assert.Pass();
+            var mockRule1 = Substitute.For<IOrderRule>();
+            var mockRule2 = Substitute.For<IOrderRule>();
+            var order = Substitute.For<Order>();
+            this._orderRuleList.Add(mockRule1);
+            this._orderRuleList.Add(mockRule2);
+            this.handlerUnderTest = new OrderReceivedHandler(this._orderRuleList);
+
+            await this.handlerUnderTest.RunRulesEngine(order);
+
+            await mockRule1.Received().CheckRule(order);
+            await mockRule2.Received().CheckRule(order);
         }
     }
 }

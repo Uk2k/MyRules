@@ -1,0 +1,12 @@
+C:\git\repos\MyRules\MyRules\MyRules.Business\bin\Debug\netcoreapp3.1\MyRules.Business.deps.json
+C:\git\repos\MyRules\MyRules\MyRules.Business\bin\Debug\netcoreapp3.1\MyRules.Business.dll
+C:\git\repos\MyRules\MyRules\MyRules.Business\bin\Debug\netcoreapp3.1\MyRules.Business.pdb
+C:\git\repos\MyRules\MyRules\MyRules.Business\bin\Debug\netcoreapp3.1\MyRules.Contracts.dll
+C:\git\repos\MyRules\MyRules\MyRules.Business\bin\Debug\netcoreapp3.1\MyRules.Contracts.pdb
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.csprojAssemblyReference.cache
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.AssemblyInfoInputs.cache
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.AssemblyInfo.cs
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.csproj.CoreCompileInputs.cache
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.csproj.CopyComplete
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.dll
+C:\git\repos\MyRules\MyRules\MyRules.Business\obj\Debug\netcoreapp3.1\MyRules.Business.pdb
