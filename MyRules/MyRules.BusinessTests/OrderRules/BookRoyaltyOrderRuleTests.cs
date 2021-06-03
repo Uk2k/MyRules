@@ -39,7 +39,13 @@
         [Test]
         public async Task ShouldNotCreatePackingSlip()
         {
+            var product = new Product("", new List<Product.ProductType>());
 
+            this.order = new Order("", 1, product);
+
+            await this.ruleUnderTest.CheckRule(this.order);
+
+            await this.packingSlipHandler.DidNotReceive().CreatePackingSlipWithReason(product, "For royalty payments");
         }
     }
 }
