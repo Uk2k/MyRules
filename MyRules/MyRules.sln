@@ -3,7 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRules.Business", "MyRules.Business\MyRules.Business.csproj", "{BF30386D-72E2-4C91-B00D-ECFA876F87F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRules.Contracts", "MyRules.Contracts\MyRules.Contracts.csproj", "{F7704408-F317-4684-9EC0-6294C2391469}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRules.BusinessTests", "MyRules.BusinessTests\MyRules.BusinessTests.csproj", "{2D84EB9D-DCCD-4D38-93C4-286FADC95D10}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF30386D-72E2-4C91-B00D-ECFA876F87F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF30386D-72E2-4C91-B00D-ECFA876F87F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF30386D-72E2-4C91-B00D-ECFA876F87F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF30386D-72E2-4C91-B00D-ECFA876F87F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7704408-F317-4684-9EC0-6294C2391469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7704408-F317-4684-9EC0-6294C2391469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7704408-F317-4684-9EC0-6294C2391469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7704408-F317-4684-9EC0-6294C2391469}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D84EB9D-DCCD-4D38-93C4-286FADC95D10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D84EB9D-DCCD-4D38-93C4-286FADC95D10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D84EB9D-DCCD-4D38-93C4-286FADC95D10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D84EB9D-DCCD-4D38-93C4-286FADC95D10}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
