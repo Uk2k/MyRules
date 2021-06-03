@@ -13,6 +13,7 @@
     public class MembershipOrderRuleTests
     {
         private IMembershipHandler membershipHandler;
+        private MembershipOrderRule ruleUnderTest;
         private Product product;
         private Order order;
 
@@ -20,12 +21,18 @@
         public void Setup()
         {
             this.membershipHandler = Substitute.For<IMembershipHandler>();
+
+            this.ruleUnderTest = new MembershipOrderRule(this.membershipHandler);
         }
 
         [Test]
         public async Task ShouldCreatePackingSlip()
         {
+            var membership = new Membership("new member");
 
+            this.order = new Order("", 1, membership);
+
+            await this.ruleUnderTest.CheckRule(order);
         }
 
         [Test]

@@ -8,11 +8,4 @@
         {
         }
     }
-
-    public class Membership : Product
-    {
-        public Membership(string description) : base(description, new List<ProductType>() {ProductType.Membership})
-        {
-        }
-    }
 }
