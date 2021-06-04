@@ -12,7 +12,6 @@
     {
         private IMembershipHandler membershipHandler;
         private UpgradeMembershipOrderRule ruleUnderTest;
-        private Product product;
         private Order order;
 
         [SetUp]

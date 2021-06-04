@@ -13,7 +13,6 @@
     {
         private IPackingSlipHandler packingSlipHandler;
         private LearningToSkiOrderRule ruleUnderTest;
-        private Product product;
         private Order order;
 
         [SetUp]

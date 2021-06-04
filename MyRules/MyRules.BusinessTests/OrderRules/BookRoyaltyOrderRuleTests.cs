@@ -13,7 +13,6 @@
     {
         private IPackingSlipHandler packingSlipHandler;
         private BookRoyaltyOderRule ruleUnderTest;
-        private Product product;
         private Order order;
 
         [SetUp]

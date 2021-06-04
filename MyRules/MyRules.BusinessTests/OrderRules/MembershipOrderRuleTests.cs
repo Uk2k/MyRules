@@ -13,8 +13,7 @@
     public class MembershipOrderRuleTests
     {
         private IMembershipHandler membershipHandler;
-        private MembershipOrderRule ruleUnderTest;
-        private Product product;
+        private MembershipOrderRule ruleUnderTest; 
         private Order order;
 
         [SetUp]
