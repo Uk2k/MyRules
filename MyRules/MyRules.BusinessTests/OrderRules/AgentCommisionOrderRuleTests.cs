@@ -2,9 +2,8 @@
 {
     using System.Collections.Generic;
     using System.Threading.Tasks;
-    using Business.Commisions;
+    using Business.Commissions;
     using Business.OrderRules;
-    using Business.PackingSlips;
     using Contracts;
     using Contracts.Products;
     using NSubstitute;
@@ -12,52 +11,52 @@
 
     public class AgentCommisionOrderRuleTests
     {
-        private ICommisionHandler commisionHandler;
-        private AgentCommisionOrderRule ruleUnderTest;
-        private Order order;
+        private ICommissionHandler _commissionHandler;
+        private AgentCommissionOrderRule _ruleUnderTest;
+        private Order _order;
 
         [SetUp]
         public void Setup()
         {
-            this.commisionHandler = Substitute.For<ICommisionHandler>();
+            this._commissionHandler = Substitute.For<ICommissionHandler>();
 
-            this.ruleUnderTest = new AgentCommisionOrderRule(this.commisionHandler);
+            this._ruleUnderTest = new AgentCommissionOrderRule(this._commissionHandler);
         }
 
         [Test]
-        public async Task ShouldSendCommision()
+        public async Task ShouldSendCommission()
         {
             var book = new PhysicalBook("Title");
 
-            this.order = new Order("", 1, book);
+            this._order = new Order("", 1, book);
 
-            await this.ruleUnderTest.CheckRule(this.order);
+            await this._ruleUnderTest.CheckRule(this._order);
 
-            await this.commisionHandler.Received().PayAgent(this.order);
+            await this._commissionHandler.Received().PayAgent(this._order);
         }
 
         [Test]
-        public async Task EbookShouldSendCommision()
+        public async Task EbookShouldSendCommission()
         {
             var book = new EBook("Title");
 
-            this.order = new Order("", 1, book);
+            this._order = new Order("", 1, book);
 
-            await this.ruleUnderTest.CheckRule(this.order);
+            await this._ruleUnderTest.CheckRule(this._order);
 
-            await this.commisionHandler.Received().PayAgent(this.order);
+            await this._commissionHandler.Received().PayAgent(this._order);
         }
 
         [Test]
-        public async Task ShouldNotSendCommision()
+        public async Task ShouldNotSendCommission()
         {
             var product = new Product("", new List<Product.ProductType>());
 
-            this.order = new Order("", 1, product);
+            this._order = new Order("", 1, product);
 
-            await this.ruleUnderTest.CheckRule(this.order);
+            await this._ruleUnderTest.CheckRule(this._order);
 
-            await this.commisionHandler.DidNotReceive().PayAgent(order);
+            await this._commissionHandler.DidNotReceive().PayAgent(_order);
         }
     }
 }

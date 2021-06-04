@@ -1,10 +1,9 @@
-﻿namespace MyRules.Business.Commisions
+﻿namespace MyRules.Business.Commissions
 {
     using System.Threading.Tasks;
     using Contracts;
-    using OrderRules;
 
-    public interface ICommisionHandler
+    public interface ICommissionHandler
     {
         Task PayAgent(IOrder order);
     }
