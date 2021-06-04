@@ -4,6 +4,7 @@
     using System.Threading.Tasks;
     using Commisions;
     using Contracts;
+    using Extensions;
 
     public class AgentCommisionOrderRule : IOrderRule
     {
@@ -16,7 +17,10 @@
 
         public async Task CheckRule(IOrder order)
         {
-            throw new NotImplementedException();
+            if (order.Product.ContainsBook() || order.Product.IsPhysical())
+            {
+                await this._commisionHandler.PayAgent(order);
+            }
         }
     }
 }
